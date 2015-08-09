@@ -1,0 +1,205 @@
+@font-face {
+        font-family: Papyrus;
+	    src: url(../Papyrus.TTF);
+	}
+
+html {
+    height: 100%;
+    color: #86181c;
+    position: relative;
+    font-size: 150%;
+    font-family: Papyrus; 
+}
+
+body {
+    color: #86181c;
+    /* Safari 5.1 to 6.0 */
+    background: -webkit-repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
+    /* Opera 11.1 to 12.0 */
+    background: -o-repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
+    /* Firefox 3.6 to 15 */
+    background: -moz-repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
+    /* Standard syntax */
+    background: repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
+    font-family: Papyrus; 
+}
+
+a{ 
+    color: #86181c;
+    text-decoration: underline;
+}
+
+div#page {
+    margin-top: 2%;
+    padding: 5%;
+    height: 100%;
+    min-height: 800px;
+    border-radius: 50px;
+    background-image: url("../img/background3.png");
+
+}
+
+
+div#page-nopad {
+    margin-top: 2%;
+    padding: 1%;
+    height: 800px;
+    border-radius: 50px;
+    background-image: url("../img/background3.png");
+
+}
+
+div#galery { 
+    margin-top: 10%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    padding-top: 1%; 
+    font-size: 2em;
+}
+
+
+hr {
+border-top: 2px solid #86181c;
+    padding-bottom: 1%; 
+}
+
+p { 
+    font-size: 170%;
+}
+
+
+.navbar-default {
+    margin: .2em auto;
+    border: 0pt;
+    font-size: 15pt;
+    background: rgba(255, 0,0 ,0);
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #fae9b3;
+    text-decoration: none;
+    }
+
+    .navbar-default .navbar-nav > .active{
+    color: #c52413;
+    border-radius: 5pt;
+    background: #fae9b3;
+    }
+     .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+    background: #fae9b3;
+    color: #c52413;
+    border-radius: 5pt;
+    text-decoration: none;
+ }
+
+
+ .navbar .nav li {
+     display: table-cell;
+     width: 1%;
+     float: none;
+ }
+
+ .navbar .nav li a {
+     text-align: center;
+ }
+
+ div#logo {
+    font-size: 28;
+    height: 25%;
+    margin: 12% 0;
+    float: none;
+    text-align: center;
+    
+ }
+ div#welcome {
+     height: 40%;
+     font-size:20pt;
+     vertical-align: top;
+    
+ }
+
+.vertical-center {
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+     min-height: 100%; /* These two lines are counted as one :-)       */
+     display: flex;
+ }
+
+#background {
+  background: -webkit-linear-gradient(left, red , blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , blue); /* Standard syntax */
+}
+
+
+
+.dropdown-menu  {
+    color: #c52413;
+    border-radius: 5pt;
+    background: #fae9b3;
+    left:auto;
+    font-size: 90%;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background: #fae9b3;
+    color: #777;
+    border-radius: 5pt;
+    text-decoration: none;
+}
+.navbar .nav li .dropdown-menu li {
+    display: block; 
+    width: auto;
+    font-size: 110%;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #86181c;
+    text-decoration: none;
+    text-align: left;
+}
+.navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-nav .open .dropdown-menu > li > a:focus {
+    background: #86181c;
+    color: #fae9b3;
+}
+
+.dropdown-menu .divider {
+background-color: #86181c;
+}
+
+.dropdown-toggle#active {
+    color: #c52413;
+    border-radius: 5pt;
+    background: #fae9b3;
+
+}
+
+
+div.soins {
+    margin-bottom: 5%;
+}
+
+p.soins {
+    text-align: justify;
+}
+
+.table-condensed>tbody>tr>td {
+padding-left: 20%;
+}
+
+#tarifs>tbody>tr>td {
+padding-left: 5%;
+}
