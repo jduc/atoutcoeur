@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Bootstrap 3 with Google Map</title>
-<meta name="viewport" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <title>Bootstrap 3 with Google Map</title>
+    <meta name="viewport" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
 
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="css/bootstrap.css"/>
-<link rel="stylesheet" href="css/site.css"/>
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/site.css"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-<style>
+      <style>
+html { height: 100% }
+body { height: 100% }
 #address {
-    font-size:1.5em;
-    width: 30%;
-    padding: 20px;
+  font-size:100%;
+  width: 30%;
+  padding: 20px;
 }
 #map-outer {  
-    height: 50%; 
-    padding: 20px; 
-    margin-bottom: 20px; 
-    top: 10%;
-    }
-#map-container { height: 400px; width: 65%; border: 5pt;}
-@media all and (max-width: 991px) {
-    #map-outer  { height: 650px }
+  height: 100%; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  top: 10%;
 }
-</style>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script>	
- 
-      function init_map() {
-	var var_location = new google.maps.LatLng(46.532883,6.654213,17);
- 
-        var var_mapoptions = {
-          center: var_location,
-          zoom: 15
-        };
- 
-	var var_marker = new google.maps.Marker({
-	    position: var_location,
-	    map: var_map,
-	    title:"Atout-Coeur"});
- 
-        var var_map = new google.maps.Map(document.getElementById("map-container"),
-            var_mapoptions);
- 
-	var_marker.setMap(var_map);	
- 
-      }
- 
-      google.maps.event.addDomListener(window, 'load', init_map);
- 
-    </script>
-</head>
-<body>
- <div class="container">
-  <div class="col-md-12">
+#map-container { height: 100%; min-height: 400px; width: 65%; border: 5pt;}
+@media all and (max-width: 991px) {
+}
+      </style>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+      <script>	
+
+function init_map() {
+  var var_location = new google.maps.LatLng(46.532883,6.654213,17);
+
+  var var_mapoptions = {
+    center: var_location,
+    zoom: 15
+  };
+
+  var var_marker = new google.maps.Marker({
+    position: var_location,
+    map: var_map,
+    title:"Atout-Coeur"});
+
+  var var_map = new google.maps.Map(document.getElementById("map-container"),
+      var_mapoptions);
+
+  var_marker.setMap(var_map);	
+
+}
+
+google.maps.event.addDomListener(window, 'load', init_map);
+
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-12">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Accueil</a> </li>
+                <li><a href="apropos.html">À propos</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                                                                         aria-expanded="false">Soins <span class="caret"></span></a>
+                                                                             aria-expanded="false">Soins <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="soins.html">Tous les soins</a></li>
                     <li role="presentation" class="divider"></li>
@@ -86,85 +88,63 @@
                   </ul>
                 </li>
                 <li><a href="galery.html">Galerie</a> </li>
-                <li><a href="informations.html">Informations</a>
+                <li><a href="informations.html">Tarifs</a>
                   <li class="active"><a href="contact.html">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-  <div class="row" id="page-nopad">
-    <div class="row">
-      <div id="map-outer" class="col-md-12">
-          <div id="address" class="col-md-4">
-            <h2>Atout-Coeur</h2>
-	    <br>
-            <address>
-            <strong>Ch. du Devin 95<br>
-                1012 Lausanne<br>
-                <span class="glyphicon glyphicon-earphone"></span> 021 652 35 71
-	    </strong>
-           </address>
-	   <a href=http://www.atout-coeur.ch>www.atout-coeur.ch</a>
-	   <a href="http://www.facebook.com"> www.facebook.com </a>
-	   <span class="glyphicon icon-facebook"></span>
+        <div class="row" id="page-nopad">
+          <div class="row">
+            <div id="map-outer" class="col-md-12">
+              <div id="address" class="col-md-4">
+                <h2>Atout-Coeur</h2>
+                <br>
+                <strong>Ch. du Devin 95<br>
+                  1012 Lausanne<br><br>
+                </strong>
+                <span class="glyphicon glyphicon-earphone"></span> 021/652.35.71 <br>
+                <span class="glyphicon glyphicon-earphone"></span> 079/433.74.51 <br>
+                <span class="glyphicon glyphicon-envelope"></span> <a
+                      href="mailto:s.matthey@bluewin.ch?Subject=''" target="_top">s.matthey@bluewin.ch</a>
+                <a href=http://www.atout-coeur.ch> www.atout-coeur.ch</a> <br>
+
+                <img src="img/facebook.jpg" width=20px, height=20px><a href="
+                https://www.facebook.com/pages/Atout-Coeur/705710852875039" style="padding-left:10px">Facebook</a></img>
+                <span class="glyphicon icon-facebook"></span> <br>
+                <br>
+              </div>
+              <div id="map-container" class="col-md-8"></div>
+            </div><!-- /map-outer -->
           </div>
-        <div id="map-container" class="col-md-8"></div>
-      </div><!-- /map-outer -->
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <p style="padding-left: 10%;"><strong>Horaires d'ouverture</strong></p>
-        <table class="table-condensed" style="font-size: 14pt; ">
-          <tr>
-            <td>Lundi</td> <td>8h-19h</td> 
-          </tr>
-          <tr>
-            <td>Mardi</td> <td>8h-19h</td> 
-          </tr>
-          <tr>
-            <td>Mercredi</td> <td>8h-19h</td> 
-          </tr>
-          <tr>
-            <td>Jeudi</td> <td>8h-19h</td> 
-          </tr>
-          <tr>
-            <td>Vendredi</td> <td>8h-19h</td> 
-          </tr>
-          <tr>
-            <td>Samedi</td> <td>9h-13h</td> 
-          </tr>
-          <tr>
-            <td>Dimanche</td> <td>Fermé</td> 
-          </tr>
-        </table>
-      </div>
-      <div class="col-md-8">
-        <p style="padding-left: 3%;"><strong>Tarifs</strong></p>
-          <table class="table-condensed" id="tarifs" style="font-size: 13pt; ">
-          <tr>
-            <td>Massage énergétique en Lemniscate</td> <td>1h</td>  <td>Fr. 100.00</td>
-          </tr>
-<tr>
-  <td>Purification tibétaine ou « chauffe de l’ombilic</td> <td>1h15</td> <td>Fr. 120.00</td> 
-</tr>
-<tr>
-  <td>Réflexologie</td> <td>1h</td> <td>Fr. 100.00</td>
-</tr>
-<tr>
-  <td>Réflexologie bébé et petit enfant</td> <td>30 à 45 min.</td>  <td>Fr.  60.00</td>
-</tr>
-<tr>
-  <td>Massage ayurvédique Abhyanga</td> <td>1h30</td> <td>Fr. 150.00</td>
-</tr>
-  <tr>
-    <td>Drainage lymphatique manuel Vodder</td> <td>1h</td> <td>Fr. 100.00</td>  </tr>
-<tr>
-  <td>Bon-cadeau</td>  <td></td> <td>Prix selon thérapie choisie</td>
-</tr>
-    </div>
-  </div>
-  </div>
-</div> 
-</div><!-- /container -->
-</body>
+          <div class="col-md-12">
+            <p> <strong>Horaires</strong></p>
+            <table class="table-condensed">
+              <tr>
+                <td>Lundi-Vendredi</td> <td>de 08h00 à 19h00</td> 
+              </tr>
+              <tr>
+                <td>Samedi</td> <td>de 08h00 à 13h00</td> 
+              </tr>
+            </table>
+          </div>
+
+          <div class="col-md-12">
+            <p> <strong><br>Accès</strong></p>
+              <p style="padding-left:3%">
+                Situé dans les hauts de Chailly, le cabinet Atout Cœur est à 5 minutes à pied de l’arrêt de bus Valmont desservi par le n°6 Sallaz et le n° 41 Praz-Séchaud.
+              </p>
+          </div>
+
+          <div class="col-md-12">
+            <p> <strong><br>Places de parc</strong></p>
+              <p style="padding-left:3%">
+							 Zones bleues et blanches à proximité.
+              </p>
+          </div>
+        </div>
+
+      </div> 
+    </div><!-- /container -->
+  </body>
 </html>

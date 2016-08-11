@@ -1,13 +1,13 @@
 @font-face {
         font-family: Papyrus;
-	    src: url(../Papyrus.TTF);
+	    src: url(../fonts/Papyrus.TTF);
 	}
 
 html {
     height: 100%;
     color: #86181c;
     position: relative;
-    font-size: 150%;
+    font-size: 170%;
     font-family: Papyrus; 
 }
 
@@ -22,6 +22,7 @@ body {
     /* Standard syntax */
     background: repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
     font-family: Papyrus; 
+    font-size: 15pt;
 }
 
 a{ 
@@ -43,7 +44,7 @@ div#page {
 div#page-nopad {
     margin-top: 2%;
     padding: 1%;
-    height: 800px;
+    height: 100%;
     border-radius: 50px;
     background-image: url("../img/background3.png");
 
@@ -52,7 +53,6 @@ div#page-nopad {
 div#galery { 
     margin-top: 10%;
 }
-
 
 h1 {
     text-align: center;
@@ -68,10 +68,6 @@ h2 {
 hr {
 border-top: 2px solid #86181c;
     padding-bottom: 1%; 
-}
-
-p { 
-    font-size: 170%;
 }
 
 
@@ -114,16 +110,16 @@ p {
  }
 
  div#logo {
-    font-size: 28;
     height: 25%;
-    margin: 12% 0;
+    margin: 10% 0;
     float: none;
     text-align: center;
     
  }
  div#welcome {
-     height: 40%;
-     font-size:20pt;
+     margin: 5% 0;
+     height: 10%;
+     font-size:200%;
      vertical-align: top;
     
  }
@@ -196,10 +192,33 @@ p.soins {
     text-align: justify;
 }
 
+p#par { 
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
 .table-condensed>tbody>tr>td {
-padding-left: 20%;
+padding-left: 10%;
+width: 50%;
+white-space: nowrap;
+
 }
 
 #tarifs>tbody>tr>td {
 padding-left: 5%;
+}
+
+ul#diplome {
+    padding-left: 5%;
+}
+
+ul#diplome li {
+    margin: 10px 0;
+}
+
+ul#diplome ul li {
+    margin: 0 0;
 }
