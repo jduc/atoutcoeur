@@ -11,6 +11,9 @@ Repo to store atoutcoeur website done as a side project and to learn more about 
 * Change the image sizes in the Soins page
 * Put apropos at the end (before contact or after)
 * Make the apropos page formating nicer
+* Change color of background in the navbar
+* Change the color of the font when highlight in navbar
+* Size of the background to 2000x1000
 
 
 #### v0.9.0 (current)
