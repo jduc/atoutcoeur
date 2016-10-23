@@ -7,7 +7,7 @@ html {
     height: 100%;
     color: #86181c;
     position: relative;
-    font-size: 170%;
+    font-size: 150%;
     font-family: Papyrus; 
 }
 
@@ -23,7 +23,7 @@ body {
     /* Standard syntax */
     background: repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
     font-family: Papyrus; 
-    font-size: 15pt;
+    font-size: 1em;
 }
 
 a{ 
@@ -60,12 +60,12 @@ div#galery {
 
 h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;;
 }
 
 h2 {
     padding-top: 1%; 
-    font-size: 2em;
+    font-size: 1.5em;;
 }
 
 
@@ -89,17 +89,26 @@ border-top: 2px solid #86181c;
     }
 
     .navbar-default .navbar-nav > .active{
-    color: #c52413;
+    color: #86181c;
     border-radius: 5pt;
     /*background: #fae9b3;*/
     background-image: url("../img/background3.png");
     }
-     .navbar-default .navbar-nav > .active > a, 
- .navbar-default .navbar-nav > .active > a:hover, 
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    font-weight: bold;
+    color: #fae9b3;
+}
+
+ .navbar-default .navbar-nav > .active > a:hover {
+    border-color: "red";
+    text-color: "red";
+ }
+ .navbar-default .navbar-nav > .active > a, 
  .navbar-default .navbar-nav > .active > a:focus {
     background-image: url("../img/background3.png");
     /*background: #fae9b3;*/
-    color: #c52413;
+    color: #86181c;
     border-radius: 5pt;
     text-decoration: none;
  }
@@ -154,6 +163,7 @@ border-top: 2px solid #86181c;
     font-size: 90%;
 }
 
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -185,7 +195,7 @@ background-color: #86181c;
 }
 
 .dropdown-toggle#active {
-    color: #c52413;
+    color: #86181c;
     border-radius: 5pt;
     /*background: #fae9b3;*/
     background-image: url("../img/background3.png");
@@ -199,13 +209,14 @@ div.soins {
 
 p.soins {
     text-align: justify;
+    font-size: 110%;
 }
 
 p#par { 
-    font-size: 100%;
+    font-size: 110%;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 
 
@@ -213,11 +224,16 @@ p#par {
 padding-left: 10%;
 width: 50%;
 white-space: nowrap;
+font-size: 1em;
 
 }
 
 #tarifs>tbody>tr>td {
 padding-left: 5%;
+}
+
+#chf {
+text-align: right; 
 }
 
 ul#diplome {

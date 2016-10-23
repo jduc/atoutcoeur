@@ -4,19 +4,20 @@ Repo to store atoutcoeur website done as a side project and to learn more about 
 
 ### Changelog
 
-#### v0.9.1 (todo)
-
+#### v0.9.1 (current)
 * Correct the title in Soins page (fontsize)
 * Remove the ... in the index page
 * Change the image sizes in the Soins page
 * Put apropos at the end (before contact or after)
 * Make the apropos page formating nicer
-* Change color of background in the navbar
-* Change the color of the font when highlight in navbar
 * Size of the background to 2000x1000
+* Image baby unzoomed
+* Width of the index page larger
+* Tarif Align the 60 to the 100 on the right
+* Change the color of the font when highlight in navbar
 
 
-#### v0.9.0 (current)
+#### v0.9.0 
 
 * Image added to repo
 * New image 
