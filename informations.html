@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/site.css"/>
     <title>Atout-Coeur</title>
-    <meta name="viewport" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
   </head>
   <body>
@@ -14,7 +14,14 @@
       <div class="col-md-12">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
-            <div class="collapse navbar-collapse">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span> 
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="navigationbar">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Accueil</a> </li>
                 <li class="dropdown">
@@ -54,20 +61,23 @@ d’assurances complémentaires.
           </div>
 
           <div class="row">
-            <div class="col-md-12" style="padding-bottom:5%">
+            <div class="col-md-12">
               <p><strong>Tarifs</strong></p>
-              <table class="table-condensed" id="tarifs" style="font-size: 1em; ">
+            </div>
+            <div class="col-md-12" style="padding-bottom:5%; padding-left:5%">
+              <table class="table table-condensed table-responsive" id="tarifs">
+                <tbody>
                 <tr>
                   <td>Réflexologie</td> <td>1h</td> <td id=chf>100.-</td>
                 </tr>
                 <tr>
-                  <td>Réflexologie bébé et petit enfant</td> <td>30 à 45 min.</td>  <td id=chf>60.-</td>
+                  <td>Réflexologie bébé et petit enfant</td> <td>30-45min.</td>  <td id=chf>60.-</td>
                 </tr>
                 <tr>
                   <td>Massage énergétique en Lemniscate</td> <td>1h</td>  <td id=chf>100.-</td>
                 </tr>
                 <tr>
-                  <td>Purification tibétaine ou « chauffe de l’ombilic »*  </td> <td>1h15 </td> <td id=chf>120.-</td> 
+                  <td>Purification tibétaine </br>« chauffe de l’ombilic »*  </td> <td>1h15 </td> <td id=chf>120.-</td> 
                 </tr>
                 <tr>
                   <td>Drainage lymphatique manuel Vodder</td> <td>1h</td> <td id=chf>100.-</td>  </tr>
@@ -76,10 +86,11 @@ d’assurances complémentaires.
                   <td>Massage du dos Breuss</td> <td>1h</td> <td id=chf>100.-</td>  </tr>
                 <tr>
                 <tr>
-                  <td>Fleurs de Bach consultation et flacon</td> <td>30 à 45 min.</td> <td id=chf>60.-</td>  </tr>
+                  <td>Fleurs de Bach consultation et flacon</td> <td>30-45min</td> <td id=chf>60.-</td>  </tr>
                 <tr>
-                  <td>Bon cadeau</td>  <td></td> <td>Prix selon thérapie choisie</td>
+                  <td>Bon cadeau</td>  <td>  </td> <td id=chf>Prix selon thérapie choisie</td>
                 </tr>
+                </tbody>
               </table>
             </div>
           </div>

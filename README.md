@@ -4,7 +4,10 @@ Repo to store atoutcoeur website done as a side project and to learn more about 
 
 ### Changelog
 
-#### v0.9.1 (current)
+#### v1.0 (current)
+* Added mobile support and rearange pages
+
+#### v0.9.1 
 * Correct the title in Soins page (fontsize)
 * Remove the ... in the index page
 * Change the image sizes in the Soins page

@@ -1,14 +1,14 @@
 @font-face {
         font-family: Papyrus;
 	    src: url(../fonts/Papyrus.TTF);
-	}
+}
 
 html {
     height: 100%;
     color: #86181c;
     position: relative;
-    font-size: 150%;
     font-family: Papyrus; 
+    font-size: 1.5em;
     text-align: justify;
 }
 
@@ -25,6 +25,17 @@ body {
     background: repeating-linear-gradient(left, #86181c, #AE1C18 50%, #86181c);
     font-family: Papyrus; 
     font-size: 1em;
+}
+
+
+/* Portrait phones and smaller */
+@media (max-width: 760px) {
+    body {
+        font-size: 15px;
+    }
+.navbar-nav .open .dropdown-menu  { 
+    width: 80%;
+}
 }
 
 a{ 
@@ -71,7 +82,7 @@ h2 {
 
 
 hr {
-border-top: 2px solid #86181c;
+	border-top: 2px solid #86181c;
     padding-bottom: 1%; 
 }
 
@@ -79,7 +90,7 @@ border-top: 2px solid #86181c;
 .navbar-default {
     margin: .2em auto;
     border: 0pt;
-    font-size: 15pt;
+    font-size: 1em;
     background: rgba(255, 0,0 ,0);
 }
 
@@ -114,16 +125,17 @@ border-top: 2px solid #86181c;
     text-decoration: none;
  }
 
-
- .navbar .nav li {
-     display: table-cell;
-     width: 1%;
-     float: none;
- }
-
- .navbar .nav li a {
+.navbar .nav li a {
      text-align: center;
  }
+
+.navbar-default .navbar-toggle {
+	border-color: gray;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
 
  div#logo {
     height: 25%;
@@ -174,6 +186,7 @@ border-top: 2px solid #86181c;
     border-radius: 5pt;
     text-decoration: none;
 }
+
 .navbar .nav li .dropdown-menu li {
     display: block; 
     width: auto;
@@ -185,6 +198,10 @@ border-top: 2px solid #86181c;
     text-decoration: none;
     text-align: left;
 }
+.navbar-nav .open .dropdown-menu {
+    border-radius: 5pt;
+}
+
 .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-nav .open .dropdown-menu > li > a:focus {
     background: #86181c;
@@ -192,7 +209,7 @@ border-top: 2px solid #86181c;
 }
 
 .dropdown-menu .divider {
-background-color: #86181c;
+	background-color: #86181c;
 }
 
 .dropdown-toggle#active {
@@ -220,17 +237,23 @@ p#par {
     width: 80%;
 }
 
-
-.table-condensed>tbody>tr>td {
-padding-left: 10%;
-width: 50%;
-white-space: nowrap;
-font-size: 1em;
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+   border-color: gray;
 
 }
 
-#tarifs>tbody>tr>td {
-padding-left: 5%;
+.table.table-responsive {
+    border: none;
+
+}
+
+.table.table-responsive tr th {
+   border-color: #86181c;
+}
+
+.table.table-responsive tr td {
+   border-color: #86181c;
+
 }
 
 #chf {
@@ -248,3 +271,16 @@ ul#diplome li {
 ul#diplome ul li {
     margin: 0 0;
 }
+
+#address {
+  font-size:100%;
+  padding: 20px;
+}
+
+#map-outer {  
+  height: 100%; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  top: 10%;
+}
+#map-container { height: 100%; min-height: 400px; width: 100%; border: 5pt;}
