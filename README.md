@@ -4,7 +4,12 @@ Repo to store atoutcoeur website done as a side project and to learn more about 
 
 ### Changelog
 
-#### v1.0 (current)
+#### v1.1 (current)
+* Added meta tag
+* Clean code and remove HTML errors
+* Better titles
+
+#### v1.0 
 * Added mobile support and rearange pages
 
 #### v0.9.1 

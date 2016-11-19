@@ -139,9 +139,8 @@ hr {
 
  div#logo {
     height: 25%;
-    margin: 10% 0;
-    float: none;
-    text-align: center;
+    display: block;
+    margin: 10% auto;
     
  }
  div#welcome {
@@ -256,7 +255,7 @@ p#par {
 
 }
 
-#chf {
+.chf {
 text-align: right; 
 }
 
